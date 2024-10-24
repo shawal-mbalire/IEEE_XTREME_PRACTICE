@@ -2,7 +2,8 @@ def is_subseq(x, y):
     it = iter(y)
     return all(any(c == ch for c in it) for ch in x)
 
-def main() -> bool:
+def brute_Force():
+
 
     s:str = input()
     q:int = int(input())
@@ -21,5 +22,16 @@ def main() -> bool:
                 l = len(ss)
         print(l)
     return True
+
+def main() -> bool:
+    # try ranking
+    s = [*input()]
+    q:int = int(input())
+    p_i:list = []
+
+    for i in range(q):
+        p_i.append(input())
+
+
 if __name__ == '__main__':
     main()
